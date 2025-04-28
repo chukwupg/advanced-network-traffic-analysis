@@ -36,11 +36,18 @@ During capture:
 
 ### 🛡️ Security Implications
 
-- **Visibility**: Anyone with access to network traffic can easily observe the domains being queried.
 - **Vulnerabilities**:
+  - **Visibility**: Anyone with access to network traffic can easily observe the domains being queried.
   - **DNS Spoofing**: Attackers can forge responses and redirect users to malicious sites.
   - **DNS Hijacking**: Redirection of queries to malicious DNS servers.
-- **Defense Tip**: Using DNS over HTTPS (DoH) or DNS over TLS (DoT) can encrypt DNS traffic and protect user privacy.
+  - **DNS Amplification Attacks**:
+    - Attackers send small DNS queries with a spoofed victim's IP address.
+    - DNS servers respond with much larger replies to the victim, overwhelming their network (Denial of Service).
+  - **DNS Reflection Attacks**:
+    - The attacker reflects DNS responses off legitimate servers to a victim, amplifying attack power without exposing their own IP.
+- **Mitigation**:
+  - Using DNS over HTTPS (DoH) or DNS over TLS (DoT) can encrypt DNS traffic and protect user privacy.
+  - Secure DNS servers with rate-limiting and response-size controls to reduce amplification risks.
 
 ### 🖼️ Visual Evidence
 
