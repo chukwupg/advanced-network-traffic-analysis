@@ -24,15 +24,15 @@ In my first project [Wireshark Traffic Analysis](https://github.com/chukwupg/wir
 
 | Protocol | Use Case | Status |
 |----------|----------|--------|
-| DNS      | Name resolution, tunneling research | ✅ Planned |
-| FTP      | Insecure file transfer | ✅ Planned |
-| ICMP     | Ping, traceroute, network diagnostics | ✅ Planned |
-| HTTP     | Unencrypted web traffic | ✅ Planned |
-| HTTPS    | Encrypted web traffic | ✅ Planned |
+| DNS      | Name resolution, tunneling research | ✔️ Analyzed |
+| ICMP     | Ping, traceroute, network diagnostics | ✔️ Analyzed |
+| FTP      | Insecure file transfer | 🅿️ Planned |
+| HTTP     | Unencrypted web traffic | 🅿️ Planned |
+| HTTPS    | Encrypted web traffic | 🅿️ Planned |
 
 ## 🌐 Real-World Threat Simulation
 
-Once baseline traffic is captured and analyzed, I plan to:
+Once baseline (clean) traffic is captured and analyzed, I plan to:
 - Analyze public PCAPs with suspicious traffic
 - Inspect basic DNS tunneling and port scans
 - Compare against normal traffic behaviors
