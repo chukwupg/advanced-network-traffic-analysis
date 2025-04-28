@@ -4,7 +4,9 @@
 **File**: `pcaps/clean/anon-dns-traffic.pcapng`  
 **Filter Used**: `dns`
 
-### 🔍 Overview
+---
+
+## 🔍 Overview
 
 Domain Name System (DNS) traffic was captured during normal web browsing and direct name resolution commands (e.g., `nslookup`, `dig`). DNS plays a critical role in resolving human-readable domain names to machine-readable IP addresses.
 
@@ -13,7 +15,9 @@ During capture:
 - Standard DNS responses contained the corresponding IP addresses.
 - Traffic was predominantly over **UDP port 53**, with no encryption.
 
-### 🧪 Observations:
+---
+
+## 🧪 Observations:
 
 | Feature | Details |
 |:--------|:--------|
@@ -34,7 +38,9 @@ During capture:
 - Responses included multiple IPs in some cases (eg `fing.com`).
 - DNS traffic is lightweight and readable, exposing the full query and response info.
 
-### 🛡️ Security Implications
+---
+
+## 🛡️ Security Implications
 
 - **Vulnerabilities**:
   - **Visibility**: Anyone with access to network traffic can easily observe the domains being queried.
@@ -44,20 +50,24 @@ During capture:
     - Attackers send small DNS queries with a spoofed victim's IP address.
     - DNS servers respond with much larger replies to the victim, overwhelming their network (Denial of Service).
   - **DNS Reflection Attacks**:
-    - The attacker reflects DNS responses off legitimate servers to a victim, amplifying attack power without exposing their own IP.
+    - The attacker reflects DNS responses off legitimate servers to a victim, amplifying attack power without exposing thei rown IP.
 - **Mitigation**:
   - Using DNS over HTTPS (DoH) or DNS over TLS (DoT) can encrypt DNS traffic and protect user privacy.
   - Secure DNS servers with rate-limiting and response-size controls to reduce amplification risks.
 
-### 🖼️ Visual Evidence
+---
+
+## 🖼️ Visual Evidence
 
 | Type | Screenshot |
 |:-----|:-----------|
-| DNS | [DNS Query/Response](https://github.com/user-attachments/assets/e5da1936-fbc4-4f7e-aad8-e25262f76a9c) |
+| DNS traffic | ![anon-dns-traffic](https://github.com/user-attachments/assets/e5da1936-fbc4-4f7e-aad8-e25262f76a9c)
 
 *The screenshot shows both the DNS query for `fing.com` and the corresponding IP addresses returned in the DNS response, under the expanded DNS protocol fields.*
 
-### 📚 Technical Deep Dive 
+---
+
+## 📚 Technical Deep Dive 
 
 - **DNS Header Analysis**:
   - **Transaction ID**: Unique per query/response pair.
@@ -72,13 +82,17 @@ During capture:
   - Some domains return several IPv4 addresses in a single response.
   - This technique supports load balancing, redundancy, and faster failover.
 
-### ✅ Summary
+---
+
+## ✅ Summary
 
 - The captured DNS traffic clearly demonstrates unencrypted name resolution over UDP port 53, highlighting how exposed standard DNS queries are during everyday internet usage.
 
 - Securing DNS queries is critical for maintaining user privacy and preventing redirection attacks.
 
-### 📂 Folder Organization Reminder
+---
+
+## 📂 Folder Organization Reminder
 
 | Folder | Content |
 |:-------|:--------|
