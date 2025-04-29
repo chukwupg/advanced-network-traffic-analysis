@@ -97,6 +97,6 @@ During capture:
 | Folder | Content |
 |:-------|:--------|
 | `pcaps/clean/` | `dns-traffic.pcapng` file |
-| `screenshots/clean-traffic` | `anon-dns-traffic.png` screenshot showing DNS query and response |
+| `screenshots/clean` | `anon-dns-traffic.png` screenshot showing DNS query and response |
 
 ---
