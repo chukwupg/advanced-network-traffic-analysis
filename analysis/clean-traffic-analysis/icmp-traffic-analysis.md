@@ -1,6 +1,7 @@
 # 📡 ICMP Traffic Analysis
 
 **Tool Used**: Wireshark  
+**CLI tools**: `ping` and `traceroute`
 **File**: `pcaps/clean/anon-icmp-traffic.pcapng`  
 **Display Filter Applied**: `icmp`
 
