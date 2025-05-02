@@ -8,7 +8,7 @@ This analysis investigates DNS tunneling as a suspicious use of DNS protocol to 
 
 | Tool Used | Tunneling Method | PCAP File              |
 |-----------|------------------|------------------------|
-| Iodine    | DNS              | dns-tunnel-iodine.pcap |
+| Iodine    | DNS              | dns-tunnelling-iodine.pcap |
 
 - **Source**: Elastic Security Analytics Examples  
 - **Description**: Shows use of the Iodine tool to tunnel traffic over DNS (https://github.com/elastic/examples)
