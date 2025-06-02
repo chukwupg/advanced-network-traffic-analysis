@@ -26,9 +26,10 @@ In my first project [Wireshark Traffic Analysis](https://github.com/chukwupg/wir
 |----------|----------|--------|
 | DNS      | Name resolution, tunneling research | ✔️ Analyzed |
 | ICMP     | Ping, traceroute, network diagnostics | ✔️ Analyzed |
-| FTP      | Insecure file transfer | 🅿️ Planned |
-| HTTP     | Unencrypted web traffic | 🅿️ Planned |
-| HTTPS    | Encrypted web traffic | 🅿️ Planned |
+| FTP      | Insecure file transfer | ✔️ Analyzed |
+| FTPS      | Secure file transfer | ✔️ Analyzed |
+| HTTP     | Unencrypted web traffic | ✔️ Analyzed |
+| HTTPS    | Encrypted web traffic | ✔️ Analyzed |
 
 ## 🌐 Real-World Threat Simulation
 
@@ -43,9 +44,9 @@ Once baseline (clean) traffic is captured and analyzed, I plan to:
 |--------|-------------|
 | `pcaps/clean/` | PCAP files for normal traffic |
 | `pcaps/suspicious/` | PCAP files with malicious or unusual behavior |
-| `analysis/` | Written insights and comparisons |
+| `analysis/` | Written protocol analysis, insights and comparisons |
 | `screenshots/` | Key findings visualized from Wireshark |
-| `tools-used/` | Commands and configurations used in the project |
+| `tools-used/` | Commands, tools and configurations used in the project |
 
 ## 📈 Why This Matters
 
